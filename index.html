@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link rel="stylesheet" href="../web-portfolio/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <h1>My Web Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" style="margin-left:20px; padding:5px 10px; cursor:pointer;">
+                Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Hello, I'm Nouara</h2>
+            <p class="tagline">Building simple, modern, and user-friendly web experiences.</p>
+            <p>Welcome to my web development portfolio. Here you can explore my projects and skills.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-me" style="display:flex; flex-direction:row; align-items:center; gap:20px; padding:40px; max-width:900px; margin:auto;">
+        <!-- Avatar minimaliste -->
+        <div id="avatar" style="flex-shrink:0; cursor:pointer;">
+            <svg width="120" height="120" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" fill="#4F46E5"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".3em">N</text>
+            </svg>
+        </div>
+
+        <!-- Texte About Me -->
+        <div style="flex:1;">
+            <h2>About Me</h2>
+            <p>
+                Hi! I’m Nouara, a beginner web developer passionate about creating websites that are clean, intuitive, and adaptive.
+                I love turning ideas into real projects that people can use and enjoy on any device.
+            </p>
+            <p>
+                My background in engineering and business gives me a unique perspective: I approach projects both logically and creatively.
+                I’m always eager to learn new tools and technologies to make my work even better.
+            </p>
+            <p>
+                Feel free to check my projects below and <a href="#contact">get in touch</a> if you want to collaborate!
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Project</h2>
+            <div class="project-card-single">
+                <div class="project-images">
+                    <img src="../web-portfolio/images/Design sans titre (1).png" alt="Desktop view">
+                    <img src="../web-portfolio/images/Design sans titre.png" alt="Mobile view">
+                </div>
+                <h3>Personal Portfolio Website</h3>
+                <p>This project showcases my skills in HTML, CSS, and JavaScript. It's fully responsive and designed with a modern minimalist style.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASSIGNMENTS SECTION -->
+    <section id="assignments" class="assignments">
+        <div class="container">
+            <h2>Assignments</h2>
+            <ul>
+                <li><a href="../web-portfolio/Assignments -PDF/pdf1.pdf">Assignment 1 PDF</a></li>
+                <li><a href="../web-portfolio/Assignments -PDF/pdf2.pdf">Assignment 2 PDF</a></li>
+                <li><a href="../web-portfolio/Assignments -PDF/pdf3.pdf">Assignment 3 PDF</a></li>
+                <li><a href="../web-portfolio/Assignments -PDF/pdf4.pdf">Assignment 4 PDF</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mqegooar" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Optionnel : ajout d’un champ anti-spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            <button type="submit">Send Message</button>
+        </form>
+         <!-- LinkedIn Alternative -->
+        <div style="margin-top:20px; text-align:center;">
+            <p>Or connect with me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/nouara-mebarki-a64289402" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                <i class="fab fa-linkedin" style="font-size:24px; color:#0A66C2;"></i>
+                <span style="font-size:16px; color:#0A66C2;">LinkedIn Profile</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Web Portfolio. Last updated: March 2026</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="../web-portfolio/javascript/javascript.js"></script>
+</body>
+</html>
